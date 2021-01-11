@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Les tableaux</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Les tableaux</h1>
+	<p><b>Voici un exemple d'un tableau basique</b></p>
+	<table>
+		<caption>Titre du tableau</caption>
+		<thead>
+			<tr>
+				<td>En-tête</td>
+				<td>En-tête</td>
+				<td>En-tête</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Corps du tableau</td>
+				<td>Corps du tableau</td>
+				<td>Corps du tableau</td>
+			</tr>
+			<tr>
+				<td colspan="3">Exemple de fusion sur une ligne</td>
+			</tr>
+			<tr>
+				<td rowspan="2">Exemple de fusion sur 2 lignes</td>
+				<td>Corps du tableau</td>
+				<td>Corps du tableau</td>
+			</tr>
+			<tr>
+				<td>Corps du tableau</td>
+				<td>Corps du tableau</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Pied de tableau</td>
+				<td>Pied de tableau</td>
+				<td>Pied de tableau</td>
+			</tr>
+		</tfoot>
+	</table>
+	<p><b>En résumé</b></p>
+	<ul>
+		<li><code>&lt;caption&gt;&lt;/caption&gt;</code> est la balise du titre du tableau</li>
+		<li><code>&lt;thead&gt;&lt;/thead&gt;</code> (le haut) est la balise qui contient l'en-tête du tableau</li>
+		<li><code>&lt;tbody&gt;&lt;/tbody&gt;</code> (le centre) est la balise qui contient le corps du tableau</li>
+		<li><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> (le bas) est la balise qui contient le pied du tableau</li>
+		<li><code>&lt;tr&gt;&lt;/tr&gt;</code> est une ligne du tableau</li>
+		<li><code>&lt;td&gt;&lt;/td&gt;</code> est une cellule du tableau et elle est toujours dans une ligne <code>&lt;tr&gt;&lt;/tr&gt;</code></li>
+		<li><code>colspan</code> est l'attribut qui permet de fusionner des cellules sur la même ligne et il est lié à une balise <code>&lt;td&gt;&lt;/td&gt;</code></li>
+		<li><code>rowspan</code> est l'attribut qui permet de fusionner des cellules sur plusieurs lignes et il est lié à une balise <code>&lt;td&gt;&lt;/td&gt;</code></li>
+		<li>La valeur après le signe = pour colspan et rowspan est le nombre de cellule à fusionner</li>
+		<li>On peut ajouter une bordure aux cellules du tableau avec<code>border</code>. Pour fusionner les bordures, on utilise la propriété CSS<code>border-collapse</code>.</li>
+	</ul>
+</body>
+</html>
