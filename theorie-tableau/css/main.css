@@ -1,0 +1,22 @@
+table{
+	width: 50%;
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+table tfoot{
+	text-align: center;
+}
+
+td  /* Toutes les cellules des tableaux... */{
+    border: 1px solid black; /* auront une bordure de 1px */
+}
+
+code {
+    background: rgba(0,0,0,.04);
+    padding: 1px 5px;
+    border: 1px solid rgba(0,0,0,.09);
+    display: inline-block;
+}
+
+ul li{
+	padding:10px;
+}
